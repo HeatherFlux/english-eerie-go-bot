@@ -1,0 +1,33 @@
+
+GET http://localhost:8080/api/books
+###
+GET http://localhost:8080/api/books/2
+###
+GET http://localhost:8080/api/books/fail
+###
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+    "ISBN": "aasd",
+    "Title": "book5",
+    "Author": {
+        "Firstname": "Carol",
+        "Lastname": "Williams"
+    }
+}
+
+###
+DELETE http://localhost:8080/api/books/2
+###
+PUT http://localhost:8080/api/books/2
+Content-Type: application/json
+
+{
+    "ISBN": "aasd",
+    "Title": "book5",
+    "Author": {
+        "Firstname": "Carol",
+        "Lastname": "Williams"
+    }
+}
